@@ -15,11 +15,11 @@ I enjoy building intelligent applications that combine **machine learning, scala
 
 ---
 
-## 🛠 Tech Stack & 📫 Connect
+## 🛠 Tech Stack
 
-| 🛠 Tech Stack | 📫 Connect |
-|---------------|------------|
-| **Languages**<br>Python • C++ • C • HTML • CSS <br><br> **AI / ML**<br>Generative AI • RAG • YOLOv8 • PyTorch • Hugging Face <br><br> **Frameworks & Libraries**<br>LangChain • FastAPI • Streamlit • OpenCV <br><br> **Databases**<br>Pinecone (Vector DB) <br><br> **Tools**<br>Git • GitHub • REST APIs | **LinkedIn**<br>https://linkedin.com/in/viraj-agrawal <br><br> **Email**<br>virajagrawal.1525@gmail.com <br><br> **GitHub**<br>https://github.com/Viraj1525 |
+| Languages | AI / ML | Frameworks & Libraries | Databases | Tools |
+|-----------|--------|------------------------|-----------|------|
+| Python, C++, C, HTML, CSS | Generative AI, RAG, YOLOv8, PyTorch, Hugging Face | LangChain, FastAPI, Streamlit, OpenCV | Pinecone (Vector DB) | Git, GitHub, REST APIs |
 
 ---
 
