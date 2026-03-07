@@ -9,6 +9,7 @@ I enjoy building intelligent applications that combine **machine learning, scala
 
 | Project | Description | Tech |
 |--------|-------------|------|
+| **AI Compliance & Risk Intelligence Platform** | AI system that analyzes enterprise documents (contracts, policies, regulatory files) to detect compliance risks, generate compliance scores, and provide intelligent document Q&A using RAG | FastAPI, LangChain, Vector DB, React |
 | **Medical AI Chatbot** | RAG-based chatbot that answers queries from medical PDFs using semantic search | LangChain, Pinecone, Groq API, Streamlit |
 | **License Plate Recognition** | Automatic Number Plate Recognition system using computer vision and OCR | YOLOv8, OpenCV, EasyOCR |
 | **LogicLens** | AI platform to analyze GitHub repositories and generate documentation, architecture diagrams, and code insights | FastAPI, React, LangChain, Ollama |
