@@ -1,0 +1,376 @@
+<svg viewBox="0 0 960 420" xmlns="http://www.w3.org/2000/svg" width="960" height="420">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1117"/>
+      <stop offset="100%" style="stop-color:#0D1117"/>
+    </linearGradient>
+
+    <!-- Card gradients per stage -->
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f2e"/>
+      <stop offset="100%" style="stop-color:#0f1923"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f2e"/>
+      <stop offset="100%" style="stop-color:#0f1923"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f2e"/>
+      <stop offset="100%" style="stop-color:#0f1923"/>
+    </linearGradient>
+    <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f2e"/>
+      <stop offset="100%" style="stop-color:#0f1923"/>
+    </linearGradient>
+    <linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f2e"/>
+      <stop offset="100%" style="stop-color:#0f1923"/>
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="glow1" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow2" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Arrow marker -->
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#00D9FF" opacity="0.9"/>
+    </marker>
+    <marker id="arrow-purple" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#7C3AED" opacity="0.9"/>
+    </marker>
+
+    <!-- Clip path for cards -->
+    <clipPath id="card-clip"><rect width="148" height="240" rx="14"/></clipPath>
+
+    <!-- Animated gradient for arrows -->
+    <linearGradient id="flowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00D9FF;stop-opacity:0">
+        <animate attributeName="offset" values="0;1" dur="2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="30%" style="stop-color:#00D9FF;stop-opacity:1">
+        <animate attributeName="offset" values="0.3;1.3" dur="2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="60%" style="stop-color:#7C3AED;stop-opacity:1">
+        <animate attributeName="offset" values="0.6;1.6" dur="2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:0">
+        <animate attributeName="offset" values="1;2" dur="2s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="420" fill="url(#bg)" rx="18"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.04">
+    <line x1="0" y1="60" x2="960" y2="60" stroke="#00D9FF" stroke-width="0.5"/>
+    <line x1="0" y1="120" x2="960" y2="120" stroke="#00D9FF" stroke-width="0.5"/>
+    <line x1="0" y1="180" x2="960" y2="180" stroke="#00D9FF" stroke-width="0.5"/>
+    <line x1="0" y1="240" x2="960" y2="240" stroke="#00D9FF" stroke-width="0.5"/>
+    <line x1="0" y1="300" x2="960" y2="300" stroke="#00D9FF" stroke-width="0.5"/>
+    <line x1="0" y1="360" x2="960" y2="360" stroke="#00D9FF" stroke-width="0.5"/>
+    <line x1="96" y1="0" x2="96" y2="420" stroke="#00D9FF" stroke-width="0.5"/>
+    <line x1="192" y1="0" x2="192" y2="420" stroke="#00D9FF" stroke-width="0.5"/>
+    <line x1="288" y1="0" x2="288" y2="420" stroke="#00D9FF" stroke-width="0.5"/>
+    <line x1="384" y1="0" x2="384" y2="420" stroke="#00D9FF" stroke-width="0.5"/>
+    <line x1="480" y1="0" x2="480" y2="420" stroke="#00D9FF" stroke-width="0.5"/>
+    <line x1="576" y1="0" x2="576" y2="420" stroke="#00D9FF" stroke-width="0.5"/>
+    <line x1="672" y1="0" x2="672" y2="420" stroke="#00D9FF" stroke-width="0.5"/>
+    <line x1="768" y1="0" x2="768" y2="420" stroke="#00D9FF" stroke-width="0.5"/>
+    <line x1="864" y1="0" x2="864" y2="420" stroke="#00D9FF" stroke-width="0.5"/>
+  </g>
+
+  <!-- Title -->
+  <text x="480" y="36" text-anchor="middle" font-family="'Courier New', monospace" font-size="15" fill="#00D9FF" font-weight="bold" letter-spacing="3" filter="url(#glow2)">HOW I BUILD AI APPS</text>
+  <line x1="320" y1="44" x2="640" y2="44" stroke="#00D9FF" stroke-width="0.6" opacity="0.4"/>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- HORIZONTAL FLOW: cards at y=65, height=220 -->
+  <!-- Card x positions: 18, 202, 386, 570, 754 -->
+  <!-- ═══════════════════════════════════════ -->
+
+  <!-- ── CARD 1: INGEST ── -->
+  <g transform="translate(18,65)">
+    <rect width="148" height="220" rx="14" fill="url(#g1)" stroke="#00D9FF" stroke-width="1.2" opacity="0.9">
+      <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Top accent bar -->
+    <rect width="148" height="4" rx="2" fill="#00D9FF" opacity="0.8"/>
+    <!-- Step badge -->
+    <rect x="55" y="12" width="38" height="18" rx="9" fill="#00D9FF" opacity="0.15"/>
+    <text x="74" y="25" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#00D9FF" font-weight="bold">① INGEST</text>
+    <!-- Icon: document with arrow -->
+    <g transform="translate(50,40)" filter="url(#glow2)">
+      <rect x="4" y="0" width="32" height="38" rx="3" fill="none" stroke="#00D9FF" stroke-width="1.5"/>
+      <line x1="10" y1="10" x2="30" y2="10" stroke="#00D9FF" stroke-width="1.2" opacity="0.7"/>
+      <line x1="10" y1="16" x2="30" y2="16" stroke="#00D9FF" stroke-width="1.2" opacity="0.7"/>
+      <line x1="10" y1="22" x2="24" y2="22" stroke="#00D9FF" stroke-width="1.2" opacity="0.7"/>
+      <!-- flying arrow into doc -->
+      <line x1="-8" y1="19" x2="2" y2="19" stroke="#00D9FF" stroke-width="1.5">
+        <animate attributeName="x1" values="-14;-6" dur="1.4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;1;0" dur="1.4s" repeatCount="indefinite"/>
+      </line>
+      <polygon points="2,16 2,22 8,19" fill="#00D9FF">
+        <animate attributeName="opacity" values="0;1;0" dur="1.4s" repeatCount="indefinite"/>
+      </polygon>
+    </g>
+    <!-- Label -->
+    <text x="74" y="96" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#FFFFFF" font-weight="bold">Data Sources</text>
+    <!-- Sub-badges -->
+    <rect x="14" y="106" width="36" height="15" rx="7" fill="#FF0000" opacity="0.75"/>
+    <text x="32" y="117" text-anchor="middle" font-family="sans-serif" font-size="8" fill="white">PDFs</text>
+    <rect x="56" y="106" width="36" height="15" rx="7" fill="#FF6C37" opacity="0.75"/>
+    <text x="74" y="117" text-anchor="middle" font-family="sans-serif" font-size="8" fill="white">APIs</text>
+    <rect x="98" y="106" width="36" height="15" rx="7" fill="#4285F4" opacity="0.75"/>
+    <text x="116" y="117" text-anchor="middle" font-family="sans-serif" font-size="8" fill="white">Web</text>
+    <!-- divider -->
+    <line x1="14" y1="130" x2="134" y2="130" stroke="#00D9FF" stroke-width="0.5" opacity="0.3"/>
+    <text x="74" y="148" text-anchor="middle" font-family="sans-serif" font-size="8.5" fill="#8B9AB5">Raw documents,</text>
+    <text x="74" y="160" text-anchor="middle" font-family="sans-serif" font-size="8.5" fill="#8B9AB5">scraped data &amp;</text>
+    <text x="74" y="172" text-anchor="middle" font-family="sans-serif" font-size="8.5" fill="#8B9AB5">API responses</text>
+    <!-- bottom step label -->
+    <text x="74" y="208" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#00D9FF" opacity="0.5">[ STEP 1 ]</text>
+  </g>
+
+  <!-- ── ANIMATED ARROW 1→2 ── -->
+  <g>
+    <!-- static base arrow -->
+    <line x1="170" y1="175" x2="196" y2="175" stroke="#1a2a3a" stroke-width="3"/>
+    <!-- animated pulse -->
+    <line x1="170" y1="175" x2="196" y2="175" stroke="url(#flowGrad)" stroke-width="2.5" marker-end="url(#arrow)">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- ── CARD 2: EMBED ── -->
+  <g transform="translate(202,65)">
+    <rect width="148" height="220" rx="14" fill="url(#g2)" stroke="#4FC3F7" stroke-width="1.2" opacity="0.9">
+      <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="3s" begin="0.6s" repeatCount="indefinite"/>
+    </rect>
+    <rect width="148" height="4" rx="2" fill="#4FC3F7" opacity="0.8"/>
+    <rect x="46" y="12" width="56" height="18" rx="9" fill="#4FC3F7" opacity="0.15"/>
+    <text x="74" y="25" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#4FC3F7" font-weight="bold">② EMBED</text>
+    <!-- Icon: brain/neural net nodes -->
+    <g transform="translate(44,36)" filter="url(#glow2)">
+      <!-- nodes -->
+      <circle cx="8" cy="8" r="5" fill="none" stroke="#4FC3F7" stroke-width="1.5"/>
+      <circle cx="8" cy="24" r="5" fill="none" stroke="#4FC3F7" stroke-width="1.5"/>
+      <circle cx="8" cy="40" r="5" fill="none" stroke="#4FC3F7" stroke-width="1.5"/>
+      <circle cx="30" cy="16" r="5" fill="none" stroke="#FFD21E" stroke-width="1.5"/>
+      <circle cx="30" cy="32" r="5" fill="none" stroke="#FFD21E" stroke-width="1.5"/>
+      <circle cx="52" cy="24" r="5" fill="none" stroke="#4FC3F7" stroke-width="1.5">
+        <animate attributeName="r" values="5;7;5" dur="1.6s" repeatCount="indefinite"/>
+        <animate attributeName="fill" values="none;#4FC3F720;none" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+      <!-- connections -->
+      <line x1="13" y1="8" x2="25" y2="16" stroke="#4FC3F7" stroke-width="0.8" opacity="0.5"/>
+      <line x1="13" y1="8" x2="25" y2="32" stroke="#4FC3F7" stroke-width="0.8" opacity="0.5"/>
+      <line x1="13" y1="24" x2="25" y2="16" stroke="#4FC3F7" stroke-width="0.8" opacity="0.5"/>
+      <line x1="13" y1="24" x2="25" y2="32" stroke="#4FC3F7" stroke-width="0.8" opacity="0.5"/>
+      <line x1="13" y1="40" x2="25" y2="16" stroke="#4FC3F7" stroke-width="0.8" opacity="0.5"/>
+      <line x1="13" y1="40" x2="25" y2="32" stroke="#4FC3F7" stroke-width="0.8" opacity="0.5"/>
+      <line x1="35" y1="16" x2="47" y2="24" stroke="#FFD21E" stroke-width="0.8" opacity="0.5"/>
+      <line x1="35" y1="32" x2="47" y2="24" stroke="#FFD21E" stroke-width="0.8" opacity="0.5"/>
+    </g>
+    <text x="74" y="96" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#FFFFFF" font-weight="bold">Vectorise</text>
+    <rect x="8" y="106" width="60" height="15" rx="7" fill="#FFD21E" opacity="0.75"/>
+    <text x="38" y="117" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#111">HuggingFace</text>
+    <rect x="74" y="106" width="66" height="15" rx="7" fill="#0467DF" opacity="0.75"/>
+    <text x="107" y="117" text-anchor="middle" font-family="sans-serif" font-size="8" fill="white">all-MiniLM-L6</text>
+    <rect x="20" y="124" width="40" height="15" rx="7" fill="#0467DF" opacity="0.75"/>
+    <text x="40" y="135" text-anchor="middle" font-family="sans-serif" font-size="8" fill="white">FAISS</text>
+    <rect x="66" y="124" width="58" height="15" rx="7" fill="#111" opacity="0.75" stroke="#00D9FF" stroke-width="0.5"/>
+    <text x="95" y="135" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#00D9FF">Pinecone</text>
+    <line x1="14" y1="147" x2="134" y2="147" stroke="#4FC3F7" stroke-width="0.5" opacity="0.3"/>
+    <text x="74" y="163" text-anchor="middle" font-family="sans-serif" font-size="8.5" fill="#8B9AB5">Chunk, embed &amp;</text>
+    <text x="74" y="175" text-anchor="middle" font-family="sans-serif" font-size="8.5" fill="#8B9AB5">store in vector DB</text>
+    <text x="74" y="208" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#4FC3F7" opacity="0.5">[ STEP 2 ]</text>
+  </g>
+
+  <!-- ── ANIMATED ARROW 2→3 ── -->
+  <g>
+    <line x1="354" y1="175" x2="380" y2="175" stroke="#1a2a3a" stroke-width="3"/>
+    <line x1="354" y1="175" x2="380" y2="175" stroke="url(#flowGrad)" stroke-width="2.5" marker-end="url(#arrow)">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" begin="0.4s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- ── CARD 3: RETRIEVE & REASON ── -->
+  <g transform="translate(386,65)">
+    <rect width="148" height="220" rx="14" fill="url(#g3)" stroke="#7C3AED" stroke-width="1.2" opacity="0.9">
+      <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="3s" begin="1.2s" repeatCount="indefinite"/>
+    </rect>
+    <rect width="148" height="4" rx="2" fill="#7C3AED" opacity="0.8"/>
+    <rect x="36" y="12" width="76" height="18" rx="9" fill="#7C3AED" opacity="0.15"/>
+    <text x="74" y="25" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#A78BFA" font-weight="bold">③ RAG REASON</text>
+    <!-- Icon: magnifying glass + brain -->
+    <g transform="translate(44,36)" filter="url(#glow2)">
+      <!-- magnifying glass -->
+      <circle cx="22" cy="20" r="14" fill="none" stroke="#7C3AED" stroke-width="2"/>
+      <circle cx="22" cy="20" r="8" fill="#7C3AED" opacity="0.15"/>
+      <line x1="32" y1="30" x2="42" y2="40" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- spark inside -->
+      <circle cx="22" cy="20" r="3" fill="#A78BFA">
+        <animate attributeName="r" values="2;5;2" dur="1.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.5;1;0.5" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <!-- rays -->
+      <line x1="22" y1="6" x2="22" y2="2" stroke="#A78BFA" stroke-width="1.2" opacity="0.5">
+        <animate attributeName="opacity" values="0;0.8;0" dur="1.8s" repeatCount="indefinite"/>
+      </line>
+      <line x1="34" y1="10" x2="37" y2="7" stroke="#A78BFA" stroke-width="1.2" opacity="0.5">
+        <animate attributeName="opacity" values="0;0.8;0" dur="1.8s" begin="0.3s" repeatCount="indefinite"/>
+      </line>
+      <line x1="36" y1="20" x2="40" y2="20" stroke="#A78BFA" stroke-width="1.2" opacity="0.5">
+        <animate attributeName="opacity" values="0;0.8;0" dur="1.8s" begin="0.6s" repeatCount="indefinite"/>
+      </line>
+    </g>
+    <text x="74" y="96" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#FFFFFF" font-weight="bold">Retrieve + LLM</text>
+    <rect x="8" y="106" width="62" height="15" rx="7" fill="#1C3C3C" opacity="0.9" stroke="#A78BFA" stroke-width="0.6"/>
+    <text x="39" y="117" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#A78BFA">LangChain RAG</text>
+    <rect x="76" y="106" width="64" height="15" rx="7" fill="#F55036" opacity="0.75"/>
+    <text x="108" y="117" text-anchor="middle" font-family="sans-serif" font-size="8" fill="white">Groq LLM</text>
+    <rect x="8" y="124" width="50" height="15" rx="7" fill="#0467DF" opacity="0.75"/>
+    <text x="33" y="135" text-anchor="middle" font-family="sans-serif" font-size="8" fill="white">Llama 3</text>
+    <rect x="64" y="124" width="76" height="15" rx="7" fill="#111" opacity="0.75" stroke="#7C3AED" stroke-width="0.5"/>
+    <text x="102" y="135" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#A78BFA">Ollama (local)</text>
+    <line x1="14" y1="147" x2="134" y2="147" stroke="#7C3AED" stroke-width="0.5" opacity="0.3"/>
+    <text x="74" y="163" text-anchor="middle" font-family="sans-serif" font-size="8.5" fill="#8B9AB5">Semantic search</text>
+    <text x="74" y="175" text-anchor="middle" font-family="sans-serif" font-size="8.5" fill="#8B9AB5">+ LLM reasoning</text>
+    <text x="74" y="208" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#A78BFA" opacity="0.5">[ STEP 3 ]</text>
+  </g>
+
+  <!-- ── ANIMATED ARROW 3→4 ── -->
+  <g>
+    <line x1="538" y1="175" x2="564" y2="175" stroke="#1a2a3a" stroke-width="3"/>
+    <line x1="538" y1="175" x2="564" y2="175" stroke="url(#flowGrad)" stroke-width="2.5" marker-end="url(#arrow)">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" begin="0.8s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- ── CARD 4: SERVE ── -->
+  <g transform="translate(570,65)">
+    <rect width="148" height="220" rx="14" fill="url(#g4)" stroke="#10B981" stroke-width="1.2" opacity="0.9">
+      <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="3s" begin="1.8s" repeatCount="indefinite"/>
+    </rect>
+    <rect width="148" height="4" rx="2" fill="#10B981" opacity="0.8"/>
+    <rect x="50" y="12" width="48" height="18" rx="9" fill="#10B981" opacity="0.15"/>
+    <text x="74" y="25" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#10B981" font-weight="bold">④ SERVE</text>
+    <!-- Icon: monitor with code -->
+    <g transform="translate(42,36)" filter="url(#glow2)">
+      <rect x="2" y="2" width="56" height="36" rx="4" fill="none" stroke="#10B981" stroke-width="1.5"/>
+      <rect x="2" y="2" width="56" height="8" rx="4" fill="#10B981" opacity="0.2"/>
+      <!-- dots -->
+      <circle cx="8" cy="6" r="2" fill="#FF5F57"/>
+      <circle cx="15" cy="6" r="2" fill="#FEBC2E"/>
+      <circle cx="22" cy="6" r="2" fill="#28C840"/>
+      <!-- code lines -->
+      <line x1="8" y1="18" x2="36" y2="18" stroke="#10B981" stroke-width="1.2" opacity="0.7">
+        <animate attributeName="x2" values="8;36;8" dur="2s" repeatCount="indefinite"/>
+      </line>
+      <line x1="8" y1="24" x2="28" y2="24" stroke="#10B981" stroke-width="1.2" opacity="0.5">
+        <animate attributeName="x2" values="8;28;8" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+      </line>
+      <line x1="8" y1="30" x2="40" y2="30" stroke="#10B981" stroke-width="1.2" opacity="0.6">
+        <animate attributeName="x2" values="8;40;8" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+      </line>
+      <!-- stand -->
+      <line x1="30" y1="38" x2="30" y2="44" stroke="#10B981" stroke-width="1.5"/>
+      <line x1="20" y1="44" x2="40" y2="44" stroke="#10B981" stroke-width="1.5"/>
+    </g>
+    <text x="74" y="96" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#FFFFFF" font-weight="bold">API + UI</text>
+    <rect x="8" y="106" width="52" height="15" rx="7" fill="#009688" opacity="0.85"/>
+    <text x="34" y="117" text-anchor="middle" font-family="sans-serif" font-size="8" fill="white">FastAPI</text>
+    <rect x="66" y="106" width="74" height="15" rx="7" fill="#61DAFB" opacity="0.75"/>
+    <text x="103" y="117" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#111">React + Vite</text>
+    <rect x="34" y="124" width="80" height="15" rx="7" fill="#FF4B4B" opacity="0.75"/>
+    <text x="74" y="135" text-anchor="middle" font-family="sans-serif" font-size="8" fill="white">Streamlit</text>
+    <line x1="14" y1="147" x2="134" y2="147" stroke="#10B981" stroke-width="0.5" opacity="0.3"/>
+    <text x="74" y="163" text-anchor="middle" font-family="sans-serif" font-size="8.5" fill="#8B9AB5">REST endpoints</text>
+    <text x="74" y="175" text-anchor="middle" font-family="sans-serif" font-size="8.5" fill="#8B9AB5">&amp; interactive UIs</text>
+    <text x="74" y="208" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#10B981" opacity="0.5">[ STEP 4 ]</text>
+  </g>
+
+  <!-- ── ANIMATED ARROW 4→5 ── -->
+  <g>
+    <line x1="722" y1="175" x2="748" y2="175" stroke="#1a2a3a" stroke-width="3"/>
+    <line x1="722" y1="175" x2="748" y2="175" stroke="url(#flowGrad)" stroke-width="2.5" marker-end="url(#arrow)">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" begin="1.2s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- ── CARD 5: DEPLOY ── -->
+  <g transform="translate(754,65)">
+    <rect width="148" height="220" rx="14" fill="url(#g5)" stroke="#F59E0B" stroke-width="1.2" opacity="0.9">
+      <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="3s" begin="2.4s" repeatCount="indefinite"/>
+    </rect>
+    <rect width="148" height="4" rx="2" fill="#F59E0B" opacity="0.8"/>
+    <rect x="46" y="12" width="56" height="18" rx="9" fill="#F59E0B" opacity="0.15"/>
+    <text x="74" y="25" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#F59E0B" font-weight="bold">⑤ DEPLOY</text>
+    <!-- Icon: rocket -->
+    <g transform="translate(46,32)" filter="url(#glow2)">
+      <!-- rocket body -->
+      <ellipse cx="28" cy="22" rx="10" ry="18" fill="none" stroke="#F59E0B" stroke-width="1.5"/>
+      <!-- nose -->
+      <path d="M18,22 Q28,2 38,22" fill="#F59E0B" opacity="0.25"/>
+      <!-- window -->
+      <circle cx="28" cy="18" r="4" fill="none" stroke="#F59E0B" stroke-width="1.2"/>
+      <circle cx="28" cy="18" r="2" fill="#F59E0B" opacity="0.5">
+        <animate attributeName="opacity" values="0.3;0.9;0.3" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+      <!-- fins -->
+      <path d="M18,36 L10,44 L18,40" fill="none" stroke="#F59E0B" stroke-width="1.2"/>
+      <path d="M38,36 L46,44 L38,40" fill="none" stroke="#F59E0B" stroke-width="1.2"/>
+      <!-- exhaust -->
+      <path d="M22,40 Q24,50 28,52 Q32,50 34,40" fill="#F59E0B" opacity="0.3">
+        <animate attributeName="d" values="M22,40 Q24,50 28,52 Q32,50 34,40;M22,40 Q24,54 28,56 Q32,54 34,40;M22,40 Q24,50 28,52 Q32,50 34,40" dur="0.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.2;0.5;0.2" dur="0.8s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <text x="74" y="96" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#FFFFFF" font-weight="bold">Ship It 🚀</text>
+    <rect x="8" y="106" width="44" height="15" rx="7" fill="#2496ED" opacity="0.85"/>
+    <text x="30" y="117" text-anchor="middle" font-family="sans-serif" font-size="8" fill="white">Docker</text>
+    <rect x="58" y="106" width="82" height="15" rx="7" fill="#4285F4" opacity="0.75"/>
+    <text x="99" y="117" text-anchor="middle" font-family="sans-serif" font-size="8" fill="white">Cloud Deploy</text>
+    <rect x="26" y="124" width="96" height="15" rx="7" fill="#FF6C37" opacity="0.75"/>
+    <text x="74" y="135" text-anchor="middle" font-family="sans-serif" font-size="8" fill="white">REST API (Live)</text>
+    <line x1="14" y1="147" x2="134" y2="147" stroke="#F59E0B" stroke-width="0.5" opacity="0.3"/>
+    <text x="74" y="163" text-anchor="middle" font-family="sans-serif" font-size="8.5" fill="#8B9AB5">Containerised &amp;</text>
+    <text x="74" y="175" text-anchor="middle" font-family="sans-serif" font-size="8.5" fill="#8B9AB5">production-ready</text>
+    <text x="74" y="208" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#F59E0B" opacity="0.5">[ STEP 5 ]</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- BOTTOM VERTICAL FEEDBACK LOOP ARROW    -->
+  <!-- ═══════════════════════════════════════ -->
+  <!-- Down from card 5 -->
+  <line x1="828" y1="285" x2="828" y2="318" stroke="#7C3AED" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.6">
+    <animate attributeName="stroke-dashoffset" values="0;-14" dur="1s" repeatCount="indefinite"/>
+  </line>
+  <!-- Left across the bottom -->
+  <line x1="828" y1="318" x2="92" y2="318" stroke="#7C3AED" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.6">
+    <animate attributeName="stroke-dashoffset" values="0;-14" dur="1s" repeatCount="indefinite"/>
+  </line>
+  <!-- Up into card 1 -->
+  <line x1="92" y1="318" x2="92" y2="285" stroke="#7C3AED" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.6" marker-end="url(#arrow-purple)">
+    <animate attributeName="stroke-dashoffset" values="0;-14" dur="1s" repeatCount="indefinite"/>
+  </line>
+  <!-- Feedback label -->
+  <rect x="388" y="308" width="184" height="20" rx="10" fill="#0D1117"/>
+  <text x="480" y="322" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#7C3AED" opacity="0.9" letter-spacing="1">↺  CONTINUOUS IMPROVEMENT LOOP</text>
+
+  <!-- Bottom tag line -->
+  <text x="480" y="400" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#FFFFFF" opacity="0.25" letter-spacing="2">RAG · LangChain · FastAPI · React · Docker</text>
+</svg>
